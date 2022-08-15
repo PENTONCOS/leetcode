@@ -208,3 +208,15 @@ var maxDepth = function(root) {
     return ret
 };
 ```
+
+- [108. 将有序数组转化为二叉搜索树](https://github.com/PENTONCOS/leetcode/tree/main/easy/108.%20将有序数组转化为二叉搜索树.md)
+
+## 栈
+
+栈是一种先进后出的数据结构，所以涉及到你需要`先进后出`这个想法后，就可以使用栈。
+
+其次栈跟递归很相似，递归也是先压栈，然后先进来的先出去，就跟函数调用栈一样。
+
+
+- [20. 有效的括号](https://github.com/PENTONCOS/leetcode/tree/main/easy/20.%20有效的括号.md)
+  

@@ -225,13 +225,11 @@ var maxDepth = function(root) {
 
 动态规划，一定要知道动态转移方程，有了这个，就相当于解题的钥匙。
 
-**确定动态转移方程的公式：**
-
-dp[i]只有两个方向可以推出来：
-
-1. 如果dp[i - 1] < 0，也就是当前遍历到nums的i，之前的最大子序和是负数，那么我们就没必要继续加它了，因为dp[i] = dp[i - 1] + nums[i] 会比nums[i]更小，所以此时还不如dp[i] = nums[i]，就是目前遍历到i的最大子序和呢
-2. 同理dp[i - 1] > 0，说明nums[i]值得去加dp[i - 1]，此时回避nums[i]更大
-
-这样代码就出来了，其实更多的就是求dp，遍历nums每一个下标都会产生最大子序和，我们记录下来即可。
-
 - [53. 最大子数组和](https://github.com/PENTONCOS/leetcode/tree/main/easy/53.%20最大子数组和.md)
+- [70. 爬楼梯](https://github.com/PENTONCOS/leetcode/tree/main/easy/70.%20爬楼梯.md)
+
+## 数学问题
+
+以下更多的是涉及数学问题，这些解法非常重要，因为在中级题里面会经常用到，**中级的两数相加都是一个模板**。
+
+- [66. 加一](https://github.com/PENTONCOS/leetcode/tree/main/easy/66.%20加一.md)

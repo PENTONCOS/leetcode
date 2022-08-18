@@ -234,3 +234,4 @@ var maxDepth = function(root) {
 
 - [66. 加一](https://github.com/PENTONCOS/leetcode/tree/main/easy/66.%20加一.md)
 - [69. x的平方根](https://github.com/PENTONCOS/leetcode/tree/main/easy/69.%20x的平方根.md)
+- [171. Excel 表列序号](https://github.com/PENTONCOS/leetcode/tree/main/easy/171.%20Excel%20表列序号.md)

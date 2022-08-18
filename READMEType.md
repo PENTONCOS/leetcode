@@ -233,3 +233,4 @@ var maxDepth = function(root) {
 以下更多的是涉及数学问题，这些解法非常重要，因为在中级题里面会经常用到，**中级的两数相加都是一个模板**。
 
 - [66. 加一](https://github.com/PENTONCOS/leetcode/tree/main/easy/66.%20加一.md)
+- [69. x的平方根](https://github.com/PENTONCOS/leetcode/tree/main/easy/69.%20x的平方根.md)

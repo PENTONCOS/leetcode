@@ -236,3 +236,5 @@ var maxDepth = function(root) {
 - [69. x的平方根](https://github.com/PENTONCOS/leetcode/tree/main/easy/69.%20x的平方根.md)
 - [171. Excel 表列序号](https://github.com/PENTONCOS/leetcode/tree/main/easy/171.%20Excel%20表列序号.md)
 - [172. 阶乘后的零](https://github.com/PENTONCOS/leetcode/tree/main/easy/172.%20阶乘后的零.md)
+- [190. 颠倒二进制位](https://github.com/PENTONCOS/leetcode/tree/main/easy/190.%20颠倒二进制位.md)
+- [268. 丢失的数字](https://github.com/PENTONCOS/leetcode/tree/main/easy/268.%20丢失的数字.md)

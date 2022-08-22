@@ -117,6 +117,9 @@ var preorderTraversal = function(root) {
 };
 ```
 中序遍历是一个意思，在前序遍历的基础上改造一下
+
+![](https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/2de9035c3cc1425bbb64ef5b5d821181~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.awebp)
+
 ```js
 var preorderTraversal = function(root) {
     // 初始化数据
@@ -136,6 +139,9 @@ var preorderTraversal = function(root) {
 ```
 
 后序遍历有点不太一样，但是套路是一样的，我们需要先遍历右子树，再遍历左子树，反着来，就可以了，代码如下：
+
+![](https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/e45cdd1671ed4128ad67b99631146410~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.awebp)
+
 ```js
 var postorderTraversal = function(root) {
   // 初始化数据

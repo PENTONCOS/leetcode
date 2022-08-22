@@ -244,3 +244,4 @@ var maxDepth = function(root) {
 - [172. 阶乘后的零](https://github.com/PENTONCOS/leetcode/tree/main/easy/172.%20阶乘后的零.md)
 - [190. 颠倒二进制位](https://github.com/PENTONCOS/leetcode/tree/main/easy/190.%20颠倒二进制位.md)
 - [268. 丢失的数字](https://github.com/PENTONCOS/leetcode/tree/main/easy/268.%20丢失的数字.md)
+- [326. 3 的幂](https://github.com/PENTONCOS/leetcode/tree/main/easy/326.%203%20的幂.md)

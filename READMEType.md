@@ -245,3 +245,11 @@ var maxDepth = function(root) {
 - [190. 颠倒二进制位](https://github.com/PENTONCOS/leetcode/tree/main/easy/190.%20颠倒二进制位.md)
 - [268. 丢失的数字](https://github.com/PENTONCOS/leetcode/tree/main/easy/268.%20丢失的数字.md)
 - [326. 3 的幂](https://github.com/PENTONCOS/leetcode/tree/main/easy/326.%203%20的幂.md)
+- [7. 整数反转](https://github.com/PENTONCOS/leetcode/tree/main/easy/7.%20整数反转.md)
+
+
+## 环问题
+
+这类问题的特点就是，要循环寻找，到底怎么循环寻找，看题便知。
+
+- [141. 环形链表](https://github.com/PENTONCOS/leetcode/tree/main/easy/141.%20环形链表.md)

@@ -253,3 +253,4 @@ var maxDepth = function(root) {
 这类问题的特点就是，要循环寻找，到底怎么循环寻找，看题便知。
 
 - [141. 环形链表](https://github.com/PENTONCOS/leetcode/tree/main/easy/141.%20环形链表.md)
+- [160. 相交链表](https://github.com/PENTONCOS/leetcode/tree/main/easy/160.%20相交链表.md)

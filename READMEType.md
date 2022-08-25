@@ -254,3 +254,4 @@ var maxDepth = function(root) {
 
 - [141. 环形链表](https://github.com/PENTONCOS/leetcode/tree/main/easy/141.%20环形链表.md)
 - [160. 相交链表](https://github.com/PENTONCOS/leetcode/tree/main/easy/160.%20相交链表.md)
+- [202. 快乐数](https://github.com/PENTONCOS/leetcode/tree/main/easy/202.%20快乐数.md)

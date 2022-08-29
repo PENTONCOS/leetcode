@@ -255,3 +255,8 @@ var maxDepth = function(root) {
 - [141. 环形链表](https://github.com/PENTONCOS/leetcode/tree/main/easy/141.%20环形链表.md)
 - [160. 相交链表](https://github.com/PENTONCOS/leetcode/tree/main/easy/160.%20相交链表.md)
 - [202. 快乐数](https://github.com/PENTONCOS/leetcode/tree/main/easy/202.%20快乐数.md)
+
+
+## 二分法
+
+- [378. 有序矩阵中第 K 小的元素](https://github.com/PENTONCOS/leetcode/tree/main/medium/202.%20有序矩阵中第%20K%20小的元素.md)

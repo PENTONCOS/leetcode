@@ -52,6 +52,8 @@ TYPE[后端返回的数字0或1或2]
 - [283. 移动零](https://github.com/PENTONCOS/leetcode/tree/main/easy/283.%20移动零.md)
 - [344. 反转字符串](https://github.com/PENTONCOS/leetcode/tree/main/easy/344.%20反转字符串.md)
 - [350. 两个数组的交集II](https://github.com/PENTONCOS/leetcode/tree/main/easy/350.%20两个数组的交集II.md)
+- [19. 删除链表的倒数第 N 个结点](https://github.com/PENTONCOS/leetcode/tree/main/medium/19.%20删除链表的倒数第%20N%20个结点.md)
+
 
 ## 二叉树（DFS）
 ### 二叉树 前中后遍历 套路详解

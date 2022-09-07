@@ -8,6 +8,7 @@
 - [242. 有效的字母异位词](https://github.com/PENTONCOS/leetcode/tree/main/easy/242.%20有效的字母异位词.md)
 - [169. 多数元素](https://github.com/PENTONCOS/leetcode/tree/main/easy/169.%20多数元素.md)
 - [136. 只出现一次的数字](https://github.com/PENTONCOS/leetcode/tree/main/easy/136.%20只出现一次的数字.md)
+- [36. 有效的数独](https://github.com/PENTONCOS/leetcode/tree/main/medium/36.%20有效的数独.md)
 
 ### 哈希表 + 映射功能
 

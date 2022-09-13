@@ -1,4 +1,4 @@
-# leetcode
+# 日常刷题（leetcode）整理
 
 ## 按难度分类
 ### [简单难度](https://github.com/PENTONCOS/leetcode/tree/main/easy)

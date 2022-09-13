@@ -237,6 +237,8 @@ var maxDepth = function(root) {
 
 - [53. 最大子数组和](https://github.com/PENTONCOS/leetcode/tree/main/easy/53.%20最大子数组和.md)
 - [70. 爬楼梯](https://github.com/PENTONCOS/leetcode/tree/main/easy/70.%20爬楼梯.md)
+- [46. 全排列](https://github.com/PENTONCOS/leetcode/tree/main/medium/46.%20全排列.md)
+
 
 ## 数学问题
 

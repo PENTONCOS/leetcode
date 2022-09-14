@@ -28,6 +28,7 @@ TYPE[后端返回的数字0或1或2]
 
 - [1. 两数之和](https://github.com/PENTONCOS/leetcode/tree/main/easy/1.%20两数之和.md)
 - [349. 两个数组的交集](https://github.com/PENTONCOS/leetcode/tree/main/easy/349.%20两个数组的交集.md)
+- [49. 字母异位词分组](https://github.com/PENTONCOS/leetcode/tree/main/medium/49.%20字母异位词分组.md)
 
 ## 找规律
 - [13. 罗马数字转整数](https://github.com/PENTONCOS/leetcode/tree/main/easy/13.%20罗马数字转整数.md)

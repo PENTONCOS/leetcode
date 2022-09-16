@@ -268,7 +268,7 @@ var maxDepth = function(root) {
 
 ## 二分法
 
-- [378. 有序矩阵中第 K 小的元素](https://github.com/PENTONCOS/leetcode/tree/main/medium/202.%20有序矩阵中第%20K%20小的元素.md)
+- [378. 有序矩阵中第 K 小的元素](https://github.com/PENTONCOS/leetcode/tree/main/medium/378.%20有序矩阵中第%20K%20小的元素.md)
 
 ## 滑动窗口
 

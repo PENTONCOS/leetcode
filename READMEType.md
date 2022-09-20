@@ -281,3 +281,4 @@ var maxDepth = function(root) {
 ## 全排列
 
 - [17. 电话号码的字母组合](https://github.com/PENTONCOS/leetcode/tree/main/medium/17.%20电话号码的字母组合.md)
+- [22. 括号生成](https://github.com/PENTONCOS/leetcode/tree/main/medium/22.%20括号生成.md)

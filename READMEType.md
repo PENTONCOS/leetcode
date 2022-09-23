@@ -17,9 +17,9 @@
 ```typescript
 // 后端只会返回0，1，2
 const TYPE = {
-    2: 'orange',
-    1: 'red',
-    0: 'blue'
+  2: 'orange',
+  1: 'red',
+  0: 'blue'
 }
 
 // 然后前端会这样用
@@ -75,16 +75,16 @@ root节点是A节点（下图的A节点），然后让你按照下图数字的�
 所以，我们需要一套如何遍历一颗二叉树，并且是先左子树，再右子树的通用模板，如下
 ```js
 var Traversal = function(root) {
-    const stack = [];
-    while (root || stack.length){
-      while(root){
-        stack.push(root);
-        root = root.left;
-      }
-      root = stack.pop();
-      root = root.right;
+  const stack = [];
+  while (root || stack.length){
+    while(root){
+      stack.push(root);
+      root = root.left;
     }
-    return res;
+    root = stack.pop();
+    root = root.right;
+  }
+  return res;
 };
 ```
 我们结合图片发现这个遍历产生的整体压栈的顺序是
@@ -108,19 +108,19 @@ F出栈
 
 ```js
 var preorderTraversal = function(root) {
-    // 初始化数据
-    const res =[];
-    const stack = [];
-    while (root || stack.length){
-      while(root){
-        res.push(root.val);
-        stack.push(root);
-        root = root.left;
-      }
-      root = stack.pop();
-      root = root.right;
+  // 初始化数据
+  const res =[];
+  const stack = [];
+  while (root || stack.length){
+    while(root){
+      res.push(root.val);
+      stack.push(root);
+      root = root.left;
     }
-    return res;
+    root = stack.pop();
+    root = root.right;
+  }
+  return res;
 };
 ```
 中序遍历是一个意思，在前序遍历的基础上改造一下
@@ -129,19 +129,19 @@ var preorderTraversal = function(root) {
 
 ```js
 var preorderTraversal = function(root) {
-    // 初始化数据
-    const res =[];
-    const stack = [];
-    while (root || stack.length){
-      while(root){
-        stack.push(root);
-        root = root.left;
-      }
-      root = stack.pop();
-      res.push(root.val);
-      root = root.right;
+  // 初始化数据
+  const res =[];
+  const stack = [];
+  while (root || stack.length){
+    while(root){
+      stack.push(root);
+      root = root.left;
     }
-    return res;
+    root = stack.pop();
+    res.push(root.val);
+    root = root.right;
+  }
+  return res;
 };
 ```
 
@@ -152,18 +152,18 @@ var preorderTraversal = function(root) {
 ```js
 var postorderTraversal = function(root) {
   // 初始化数据
-    const res =[];
-    const stack = [];
-    while (root || stack.length){
-      while(root){
-        stack.push(root);
-        res.unshift(root.val);
-        root = root.right;
-      }
-      root = stack.pop();
-      root = root.left;
+  const res =[];
+  const stack = [];
+  while (root || stack.length){
+    while(root){
+      stack.push(root);
+      res.unshift(root.val);
+      root = root.right;
     }
-    return res;
+    root = stack.pop();
+    root = root.left;
+  }
+  return res;
 };
 ```
 ### 对称二叉树
@@ -193,13 +193,13 @@ var postorderTraversal = function(root) {
 - 判断 A 的左子树与 B 的右子树是否对称
 ```js
 function isSame(leftNode, rightNode){
-    if(leftNode === null && rightNode === null) return true;
-    if(leftNode === null || rightNode === null) return false;
-    return leftNode.val === rightNode.val && isSame(leftNode.left, rightNode.right) && isSame(leftNode.right, rightNode.left)
+  if(leftNode === null && rightNode === null) return true;
+  if(leftNode === null || rightNode === null) return false;
+  return leftNode.val === rightNode.val && isSame(leftNode.left, rightNode.right) && isSame(leftNode.right, rightNode.left)
 }
 var isSymmetric = function(root) {
-    if(!root) return root;
-    return isSame(root.left, root.right);
+  if(!root) return root;
+  return isSame(root.left, root.right);
 };
 ```
 ### 二叉树的最大深度
@@ -210,15 +210,15 @@ var isSymmetric = function(root) {
 - 然后以此类推，一直比较到深度最大的
 ```js
 var maxDepth = function(root) {
-    if(!root) return root;
-    let ret = 1;
-    function dfs(root, depth){
-        if(!root.left && !root.right) ret = Math.max(ret, depth);
-        if(root.left) dfs(root.left, depth+1);
-        if(root.right) dfs(root.right, depth+1);
-    }
-    dfs(root, ret);
-    return ret
+  if(!root) return root;
+  let ret = 1;
+  function dfs(root, depth){
+    if(!root.left && !root.right) ret = Math.max(ret, depth);
+    if(root.left) dfs(root.left, depth+1);
+    if(root.right) dfs(root.right, depth+1);
+  }
+  dfs(root, ret);
+  return ret
 };
 ```
 

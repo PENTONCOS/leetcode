@@ -242,6 +242,7 @@ var maxDepth = function(root) {
 - [70. 爬楼梯](https://github.com/PENTONCOS/leetcode/tree/main/easy/70.%20爬楼梯.md)
 - [46. 全排列](https://github.com/PENTONCOS/leetcode/tree/main/medium/46.%20全排列.md)
 - [5. 最长回文子串](https://github.com/PENTONCOS/leetcode/tree/main/medium/5.%20最长回文子串.md)
+- [198. 打家劫舍](https://github.com/PENTONCOS/leetcode/tree/main/medium/198.%20打家劫舍.md)
 
 
 ## 数学问题

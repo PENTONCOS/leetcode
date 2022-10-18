@@ -246,6 +246,7 @@ var maxDepth = function(root) {
 - [198. 打家劫舍](https://github.com/PENTONCOS/leetcode/tree/main/medium/198.%20打家劫舍.md)
 - [647. 回文子串](https://github.com/PENTONCOS/leetcode/tree/main/medium/647.%20回文子串.md)
 - [120. 三角形最小路径和](https://github.com/PENTONCOS/leetcode/tree/main/medium/120.%20三角形最小路径和.md)
+- [931. 下降路径最小和](https://github.com/PENTONCOS/leetcode/tree/main/medium/931.%20下降路径最小和.md)
 
 
 ## 数学问题

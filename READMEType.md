@@ -66,6 +66,16 @@ TYPE[后端返回的数字0或1或2]
 
 以下都是完全二叉树：
 ![](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/80f84d9e6d8e45a4b6be7fe3ab9a440d~tplv-k3u1fbpfcp-zoom-in-crop-mark:4536:0:0:0.awebp)
+
+### 二叉堆
+二叉堆（binary heap）是一种特殊的堆，二叉堆是完全二叉树或者是近似完全二叉树。
+
+二叉堆满足堆特性：父节点的键值总是保持固定的序关系于任何一个子节点的键值，且每个节点的左子树和右子树都是一个二叉堆。
+
+当父节点的键值总是大于或等于任何一个子节点的键值时为“最大堆”（max heap）。
+
+当父节点的键值总是小于或等于任何一个子节点的键值时为“最小堆”（min heap）。
+![](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/de9b9f79b62b4e37bfb90e0691bd195f~tplv-k3u1fbpfcp-zoom-in-crop-mark:4536:0:0:0.awebp)
 ### 二叉树 前中后遍历 套路详解
 前序遍历题目如下：
 

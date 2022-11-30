@@ -61,6 +61,11 @@ TYPE[后端返回的数字0或1或2]
 
 
 ## 二叉树（DFS）
+### 完全二叉树
+在一颗二叉树中，若除最后一层外的其余层都是满的，并且最后一层要么是满的，要么在右边缺少连续若干节点，则此二叉树为完全二叉树（Complete Binary Tree）
+
+以下都是完全二叉树：
+![](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/80f84d9e6d8e45a4b6be7fe3ab9a440d~tplv-k3u1fbpfcp-zoom-in-crop-mark:4536:0:0:0.awebp)
 ### 二叉树 前中后遍历 套路详解
 前序遍历题目如下：
 

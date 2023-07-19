@@ -10,6 +10,7 @@
 - [136. 只出现一次的数字](https://github.com/PENTONCOS/leetcode/tree/main/easy/136.%20只出现一次的数字.md)
 - [36. 有效的数独](https://github.com/PENTONCOS/leetcode/tree/main/medium/36.%20有效的数独.md)
 - [187. 重复的DNA序列](https://github.com/PENTONCOS/leetcode/tree/main/medium/187.%20重复的DNA序列.md)
+- [219. 存在重复元素 II](https://github.com/PENTONCOS/leetcode/tree/main/easy/219.%20存在重复元素%20II.md)
 
 ### 哈希表 + 映射功能
 
@@ -301,6 +302,7 @@ var maxDepth = function(root) {
 - [209. 长度最小的子数组](https://github.com/PENTONCOS/leetcode/tree/main/medium/209.%20长度最小的子数组.md)
 - [1031. 两个非重叠子数组的最大和](https://github.com/PENTONCOS/leetcode/tree/main/medium/1031.%20两个非重叠子数组的最大和.md)
 - [2379. 得到 K 个黑块的最少涂色次数](https://github.com/PENTONCOS/leetcode/tree/main/easy/2379.%20得到%20K%20个黑块的最少涂色次数.md)
+- [219. 存在重复元素 II](https://github.com/PENTONCOS/leetcode/tree/main/easy/219.%20存在重复元素%20II.md)
 
 ## 递归与回溯
 

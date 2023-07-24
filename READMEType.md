@@ -303,6 +303,7 @@ var maxDepth = function(root) {
 - [1031. 两个非重叠子数组的最大和](https://github.com/PENTONCOS/leetcode/tree/main/medium/1031.%20两个非重叠子数组的最大和.md)
 - [2379. 得到 K 个黑块的最少涂色次数](https://github.com/PENTONCOS/leetcode/tree/main/easy/2379.%20得到%20K%20个黑块的最少涂色次数.md)
 - [219. 存在重复元素 II](https://github.com/PENTONCOS/leetcode/tree/main/easy/219.%20存在重复元素%20II.md)
+- [643. 子数组最大平均数 I](https://github.com/PENTONCOS/leetcode/tree/main/easy/643.%20子数组最大平均数%20I.md)
 
 ## 递归与回溯
 

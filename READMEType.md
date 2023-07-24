@@ -60,6 +60,7 @@ TYPE[后端返回的数字0或1或2]
 - [350. 两个数组的交集II](https://github.com/PENTONCOS/leetcode/tree/main/easy/350.%20两个数组的交集II.md)
 - [19. 删除链表的倒数第 N 个结点](https://github.com/PENTONCOS/leetcode/tree/main/medium/19.%20删除链表的倒数第%20N%20个结点.md)
 - [15. 三数之和](https://github.com/PENTONCOS/leetcode/tree/main/medium/15.%20三数之和.md)
+- [658. 找到 K 个最接近的元素](https://github.com/PENTONCOS/leetcode/tree/main/medium/658.%20找到%20K%20个最接近的元素.md)
 
 
 ## 二叉树（DFS）
@@ -295,6 +296,7 @@ var maxDepth = function(root) {
 
 - [378. 有序矩阵中第 K 小的元素](https://github.com/PENTONCOS/leetcode/tree/main/medium/378.%20有序矩阵中第%20K%20小的元素.md)
 - [34. 在排序数组中查找元素的第一个和最后一个位置](https://github.com/PENTONCOS/leetcode/tree/main/medium/34.%20在排序数组中查找元素的第一个和最后一个位置.md)
+- [658. 找到 K 个最接近的元素](https://github.com/PENTONCOS/leetcode/tree/main/medium/658.%20找到%20K%20个最接近的元素.md)
 
 ## 滑动窗口
 
@@ -304,6 +306,7 @@ var maxDepth = function(root) {
 - [2379. 得到 K 个黑块的最少涂色次数](https://github.com/PENTONCOS/leetcode/tree/main/easy/2379.%20得到%20K%20个黑块的最少涂色次数.md)
 - [219. 存在重复元素 II](https://github.com/PENTONCOS/leetcode/tree/main/easy/219.%20存在重复元素%20II.md)
 - [643. 子数组最大平均数 I](https://github.com/PENTONCOS/leetcode/tree/main/easy/643.%20子数组最大平均数%20I.md)
+- [658. 找到 K 个最接近的元素](https://github.com/PENTONCOS/leetcode/tree/main/medium/658.%20找到%20K%20个最接近的元素.md)
 
 ## 递归与回溯
 

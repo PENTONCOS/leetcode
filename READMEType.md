@@ -302,8 +302,9 @@ var maxDepth = function(root) {
 
 数据结构：数组
 
-算法关键词：连续子数组、固定的子数组长度
+关键词：连续子数组、固定的子数组长度
 
+**模版**
 ```js
 let right = 0
 let left = 0 
@@ -365,6 +366,30 @@ while (right < s.length) {
 - [567. 字符串的排列](https://github.com/PENTONCOS/leetcode/tree/main/medium/567.%20字符串的排列.md)
 
 ## 递归与回溯
+
+关键词：组合
+
+**模版**
+```js
+function dfs (str, deep){
+  let res = [];
+  if(deep === 最大深度){
+    return;
+  }
+
+  if(满足条件){
+    res.push(str);
+    return;
+  }
+
+  if(边界条件内){
+    dfs(str + 变量, deep + 1);
+  }
+}
+
+dfs('', 0)
+return res
+```
 
 - [17. 电话号码的字母组合](https://github.com/PENTONCOS/leetcode/tree/main/medium/17.%20电话号码的字母组合.md)
 - [22. 括号生成](https://github.com/PENTONCOS/leetcode/tree/main/medium/22.%20括号生成.md)

@@ -301,6 +301,7 @@ var maxDepth = function(root) {
 ## 滑动窗口
 
 数据结构：数组
+
 算法关键词：连续子数组、固定的子数组长度
 
 ```js
@@ -367,3 +368,4 @@ while (right < s.length) {
 
 - [17. 电话号码的字母组合](https://github.com/PENTONCOS/leetcode/tree/main/medium/17.%20电话号码的字母组合.md)
 - [22. 括号生成](https://github.com/PENTONCOS/leetcode/tree/main/medium/22.%20括号生成.md)
+- [39. 组合总和](https://github.com/PENTONCOS/leetcode/tree/main/medium/39.%20组合总和.md)

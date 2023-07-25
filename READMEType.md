@@ -300,6 +300,60 @@ var maxDepth = function(root) {
 
 ## 滑动窗口
 
+数据结构：数组
+算法关键词：连续子数组、固定的子数组长度
+
+```js
+let right = 0
+let left = 0 
+
+while (right < s.length) {
+  while('条件' && left <= right) {
+    // 求值
+    left++
+  }
+  // 求值
+  right++
+}
+```
+
+```js
+let right = 0 // 第一个指针
+let left = 0 // 第二个指针
+
+// 初始化窗口
+while(right < '窗口大小') {
+  right++
+}
+
+//符合条件
+while (right < s.length) {
+  // 求值
+  left++
+  // 求值
+  right++
+}
+```
+
+```js
+let right = 0
+let left = 0 
+
+while (right < s.length) {
+  while( right - left + 1 > '窗口' && left <= right) {
+    // 求值
+    left++
+  }
+  
+  // 只有符合窗口大小求值
+  if (right - left + 1 === '窗口大小') {
+    
+  }
+  // 求值
+  right++
+}
+```
+
 - [3. 无重复字符的最长子串](https://github.com/PENTONCOS/leetcode/tree/main/medium/3.%20无重复字符的最长子串.md)
 - [209. 长度最小的子数组](https://github.com/PENTONCOS/leetcode/tree/main/medium/209.%20长度最小的子数组.md)
 - [1031. 两个非重叠子数组的最大和](https://github.com/PENTONCOS/leetcode/tree/main/medium/1031.%20两个非重叠子数组的最大和.md)

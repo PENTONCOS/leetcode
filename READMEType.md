@@ -307,6 +307,7 @@ var maxDepth = function(root) {
 - [219. 存在重复元素 II](https://github.com/PENTONCOS/leetcode/tree/main/easy/219.%20存在重复元素%20II.md)
 - [643. 子数组最大平均数 I](https://github.com/PENTONCOS/leetcode/tree/main/easy/643.%20子数组最大平均数%20I.md)
 - [658. 找到 K 个最接近的元素](https://github.com/PENTONCOS/leetcode/tree/main/medium/658.%20找到%20K%20个最接近的元素.md)
+- [567. 字符串的排列](https://github.com/PENTONCOS/leetcode/tree/main/medium/567.%20字符串的排列.md)
 
 ## 递归与回溯
 

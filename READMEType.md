@@ -371,30 +371,65 @@ while (right < s.length) {
 
 **模版**
 ```js
-var resoult = function(candidates, target){
+var ouput = function(candidates, target){
   function dfs (remain, current, deep){
-  let res = [];
-  if(deep === 最大深度){
-    return;
+    let res = [];
+    
+    if(remain === 0){
+      res.push([...current]);
+      return;
+    }
+
+    if(deep >= candidates.length){
+      return;
+    }
+
+    if(remain - candidates[deep] >= 0){
+      dfs(remain - candidates[deep], [...current, candidates[deep]] , deep + 1);
+    }
+
+    dfs(remain, [...current], deep + 1);
   }
 
-  if(满足条件 || remain === 0){
-    res.push([...current]);
-    return;
-  }
-
-  if(remain - candidates[deep] >= 0){
-    dfs(remain - candidates[deep], [...current, candidates[deep]] , deep + 1);
-  }
-
-  dfs(remain, [...current], deep + 1);
+  dfs(target, [], 0)
+  return res
 }
+```
+**去重模版**
+```js
+var ouput = function(candidates, target){
+  candidates.sort((a, b) => a - b); // 排序是为了方便去重
+  let res = [];
+  function dfs (remain, current, deep){
+    let noReaptingIndex = deep + 1; // 下一个不重复的数的指针
+    
+    if(remain === 0){
+      res.push([...current]);
+      return;
+    }
 
-dfs(target, [], 0)
-return res
+    if(deep >= candidates.length){
+      return;
+    }
+
+    if(remain - candidates[deep] >= 0){
+      dfs(remain - candidates[deep], [...current, candidates[deep]] , deep + 1);
+    }
+
+    // 判断是否与下一个数相等
+    while (candidates[noReaptingIndex] == candidates[deep]) {
+      noReaptingIndex++
+    }
+
+    dfs(remain, [...current], noReaptingIndex);
+  }
+
+  dfs(target, [], 0)
+  return res
 }
 ```
 
 - [17. 电话号码的字母组合](https://github.com/PENTONCOS/leetcode/tree/main/medium/17.%20电话号码的字母组合.md)
 - [22. 括号生成](https://github.com/PENTONCOS/leetcode/tree/main/medium/22.%20括号生成.md)
 - [39. 组合总和](https://github.com/PENTONCOS/leetcode/tree/main/medium/39.%20组合总和.md)
+- [40. 组合总和 II](https://github.com/PENTONCOS/leetcode/tree/main/medium/40.%20组合总和%20II.md)

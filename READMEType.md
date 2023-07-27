@@ -371,24 +371,28 @@ while (right < s.length) {
 
 **模版**
 ```js
-function dfs (str, deep){
+var resoult = function(candidates, target){
+  function dfs (remain, current, deep){
   let res = [];
   if(deep === 最大深度){
     return;
   }
 
-  if(满足条件){
-    res.push(str);
+  if(满足条件 || remain === 0){
+    res.push([...current]);
     return;
   }
 
-  if(边界条件内){
-    dfs(str + 变量, deep + 1);
+  if(remain - candidates[deep] >= 0){
+    dfs(remain - candidates[deep], [...current, candidates[deep]] , deep + 1);
   }
+
+  dfs(remain, [...current], deep + 1);
 }
 
-dfs('', 0)
+dfs(target, [], 0)
 return res
+}
 ```
 
 - [17. 电话号码的字母组合](https://github.com/PENTONCOS/leetcode/tree/main/medium/17.%20电话号码的字母组合.md)

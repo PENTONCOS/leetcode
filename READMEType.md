@@ -371,7 +371,7 @@ while (right < s.length) {
 
 **模版**
 ```js
-var ouput = function(candidates, target){
+var output = function(candidates, target){
   function dfs (remain, current, deep){
     let res = [];
     
@@ -395,11 +395,12 @@ var ouput = function(candidates, target){
   return res
 }
 ```
-**去重模版**
+**去重模版一**
 ```js
-var ouput = function(candidates, target){
-  candidates.sort((a, b) => a - b); // 排序是为了方便去重
+var output = function(candidates, target){
   let res = [];
+  candidates.sort((a, b) => a - b); // 排序是为了方便去重
+
   function dfs (remain, current, deep){
     let noReaptingIndex = deep + 1; // 下一个不重复的数的指针
     
@@ -428,8 +429,40 @@ var ouput = function(candidates, target){
   return res
 }
 ```
+**去重模版二**
+去重全排列
+
+```js
+var permuteUnique = function (nums) {
+  let res = [];
+  let used = new Array(nums.length).fill(false);
+  nums.sort((a, b) => a - b);
+
+  function dfs(current, deep) {
+    if (deep === nums.length) {
+      res.push([...current]);
+      return;
+    }
+
+    for (var i = 0; i < nums.length; i++) {
+      // used[i] == used[i - 1] 且 used[i - 1] === true，则说明同一树枝上有两个重复的元素 used[i] 和 used[i - 1]，可以选取
+      // used[i] == used[i - 1] 且 used[i - 1] === false，则说明同一层上有两个重复的元素 used[i] 和 used[i - 1]，需要跳过
+      if (used[i] || (i > 0 && nums[i] === nums[i - 1] && !used[i - 1])) {
+        continue;
+      }
+      used[i] = true;
+      dfs([...current, nums[i]], deep + 1);
+      used[i] = false;
+    }
+  }
+
+  dfs([], 0);
+  return res;
+};
+```
 
 - [17. 电话号码的字母组合](https://github.com/PENTONCOS/leetcode/tree/main/medium/17.%20电话号码的字母组合.md)
 - [22. 括号生成](https://github.com/PENTONCOS/leetcode/tree/main/medium/22.%20括号生成.md)
 - [39. 组合总和](https://github.com/PENTONCOS/leetcode/tree/main/medium/39.%20组合总和.md)
 - [40. 组合总和 II](https://github.com/PENTONCOS/leetcode/tree/main/medium/40.%20组合总和%20II.md)
+- [47. 全排列 II](https://github.com/PENTONCOS/leetcode/tree/main/medium/47.%20全排列%20II.md)

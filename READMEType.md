@@ -11,7 +11,7 @@
 - [36. 有效的数独](https://github.com/PENTONCOS/leetcode/tree/main/medium/36.%20有效的数独.md)
 - [187. 重复的DNA序列](https://github.com/PENTONCOS/leetcode/tree/main/medium/187.%20重复的DNA序列.md)
 - [219. 存在重复元素 II](https://github.com/PENTONCOS/leetcode/tree/main/easy/219.%20存在重复元素%20II.md)
-
+- [1436. 旅行终点站](https://github.com/PENTONCOS/leetcode/tree/main/easy/1436.%20旅行终点站.md)
 ### 哈希表 + 映射功能
 
 哈希表有一个非常常见的功能就是建立映射关系，比如说设计模式里的策略模式，思路是一样的，映射表常常见于后端的枚举类型，typescript也是一样，我们举一个js的例子

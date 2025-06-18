@@ -38,7 +38,6 @@ TYPE[后端返回的数字0或1或2]
 - [21. 合并两个有序链表](https://github.com/PENTONCOS/leetcode/tree/main/easy/21.%20合并两个有序链表.md)
 - [28. 实现 strStr()](https://github.com/PENTONCOS/leetcode/tree/main/easy/28.%20实现%20strStr().md)
 - [118. 杨辉三角](https://github.com/PENTONCOS/leetcode/tree/main/easy/118.%20杨辉三角.md)
-- [121. 买卖股票的最佳时机](https://github.com/PENTONCOS/leetcode/tree/main/easy/121.%20买卖股票的最佳时机.md)
 - [122. 买卖股票的最佳时机 II](https://github.com/PENTONCOS/leetcode/tree/main/easy/122.%20买卖股票的最佳时机%20II.md)
 - [206. 反转链表](https://github.com/PENTONCOS/leetcode/tree/main/easy/206.%20反转链表.md) 这个题必须掌握牢实，是解很多链接表题的基础的基础。
 - [38. 外观数列](https://github.com/PENTONCOS/leetcode/tree/main/medium/38.%20外观数列.md)
@@ -259,6 +258,7 @@ var maxDepth = function(root) {
 
 - [53. 最大子数组和](https://github.com/PENTONCOS/leetcode/tree/main/easy/53.%20最大子数组和.md)
 - [70. 爬楼梯](https://github.com/PENTONCOS/leetcode/tree/main/easy/70.%20爬楼梯.md)
+- [121. 买卖股票的最佳时机](https://github.com/PENTONCOS/leetcode/tree/main/easy/121.%20买卖股票的最佳时机.md)
 - [46. 全排列](https://github.com/PENTONCOS/leetcode/tree/main/medium/46.%20全排列.md)
 - [5. 最长回文子串](https://github.com/PENTONCOS/leetcode/tree/main/medium/5.%20最长回文子串.md)
 - [198. 打家劫舍](https://github.com/PENTONCOS/leetcode/tree/main/medium/198.%20打家劫舍.md)

@@ -41,7 +41,7 @@ TYPE[后端返回的数字0或1或2]
 - [122. 买卖股票的最佳时机 II](https://github.com/PENTONCOS/leetcode/tree/main/medium/122.%20买卖股票的最佳时机%20II.md)
 - [206. 反转链表](https://github.com/PENTONCOS/leetcode/tree/main/easy/206.%20反转链表.md) 这个题必须掌握牢实，是解很多链接表题的基础的基础。
 - [38. 外观数列](https://github.com/PENTONCOS/leetcode/tree/main/medium/38.%20外观数列.md)
-- [48. 旋转图像](https://github.com/PENTONCOS/leetcode/tree/main/medium/48.%20旋转图像.md)
+- [48. 旋转图像](https://github.com/PENTONCOS/leetcode/tree/main/medium/48.%20旋转图像.md) 转置 + 水平翻转
 
 ## 双指针
 双指针是解数组类型题最常见解法

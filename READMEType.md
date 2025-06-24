@@ -52,7 +52,7 @@ TYPE[后端返回的数字0或1或2]
 - [26. 删除有序数组中的重复项](https://github.com/PENTONCOS/leetcode/tree/main/easy/26.%20删除有序数组中的重复项.md)
 - [88. 合并两个有序数组](https://github.com/PENTONCOS/leetcode/tree/main/easy/88.%20合并两个有序数组.md)
 - [125. 验证回文串](https://github.com/PENTONCOS/leetcode/tree/main/easy/125.%20验证回文串.md)
-- [234. 回文链表](https://github.com/PENTONCOS/leetcode/tree/main/easy/234.%20回文链表.md)
+- [234. 回文链表](https://github.com/PENTONCOS/leetcode/tree/main/easy/234.%20回文链表.md) 经典题：考察快慢指针来解决找寻链表中点和链表翻转问题
 - [237. 删除链表中的节点](https://github.com/PENTONCOS/leetcode/tree/main/easy/237.%20删除链表中的节点.md)
 - [283. 移动零](https://github.com/PENTONCOS/leetcode/tree/main/easy/283.%20移动零.md)
 - [344. 反转字符串](https://github.com/PENTONCOS/leetcode/tree/main/easy/344.%20反转字符串.md)

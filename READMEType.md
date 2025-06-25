@@ -57,7 +57,7 @@ TYPE[后端返回的数字0或1或2]
 - [283. 移动零](https://github.com/PENTONCOS/leetcode/tree/main/easy/283.%20移动零.md)
 - [344. 反转字符串](https://github.com/PENTONCOS/leetcode/tree/main/easy/344.%20反转字符串.md)
 - [350. 两个数组的交集II](https://github.com/PENTONCOS/leetcode/tree/main/easy/350.%20两个数组的交集II.md)
-- [19. 删除链表的倒数第 N 个结点](https://github.com/PENTONCOS/leetcode/tree/main/medium/19.%20删除链表的倒数第%20N%20个结点.md)
+- [19. 删除链表的倒数第 N 个结点](https://github.com/PENTONCOS/leetcode/tree/main/medium/19.%20删除链表的倒数第%20N%20个结点.md) 快慢指针距离：通过保持 n 个节点的距离，确保慢指针能准确定位到要删除节点的前一个位置
 - [15. 三数之和](https://github.com/PENTONCOS/leetcode/tree/main/medium/15.%20三数之和.md)
 - [658. 找到 K 个最接近的元素](https://github.com/PENTONCOS/leetcode/tree/main/medium/658.%20找到%20K%20个最接近的元素.md)
 

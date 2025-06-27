@@ -92,6 +92,7 @@ root节点是A节点（下图的A节点），然后让你按照下图数字的�
 所以，我们需要一套如何遍历一颗二叉树，并且是先左子树，再右子树的通用模板，如下
 ```js
 var Traversal = function(root) {
+  const res = [];
   const stack = [];
   while (root || stack.length){
     while(root){
@@ -209,7 +210,7 @@ var postorderTraversal = function(root) {
 - 判断两个指针当前节点值是否相等
 - 判断 A 的右子树与 B 的左子树是否对称
 - 判断 A 的左子树与 B 的右子树是否对称
-```js
+```js 递归
 function isSame(leftNode, rightNode){
   if(leftNode === null && rightNode === null) return true;
   if(leftNode === null || rightNode === null) return false;
@@ -221,11 +222,13 @@ var isSymmetric = function(root) {
 };
 ```
 ### 二叉树的最大深度
-这个题在面试滴滴的时候遇到过，主要是掌握二叉树遍历的套路。
+这个题在面试滴滴的时候遇到过，主要是掌握二叉树遍历的套路
 
 - 只要遍历到这个节点既没有左子树，又没有右子树的时候
 - 说明就到底部了，这个时候如果之前记录了深度，就可以比较是否比之前记录的深度大，大就更新深度
 - 然后以此类推，一直比较到深度最大的
+
+**思路一：深度优先搜索（DFS）递归实现**
 ```js
 var maxDepth = function(root) {
   if(!root) return root;
@@ -238,6 +241,21 @@ var maxDepth = function(root) {
   dfs(root, ret);
   return ret
 };
+```
+**思路二：深度优先搜索（DFS）迭代版本**
+```js
+var maxDepth = function(root) {
+  if(!root) return root;
+  let ret = 1;
+  let stack = [[root, 1]];
+  while(stack.length){
+    let [node, depth] = stack.pop();
+    if(!node.left && !node.right) ret = Math.max(ret, depth);
+    if(node.right) stack.push([node.right, depth+1]);
+    if(node.left) stack.push([node.left, depth+1]);
+  }
+  return ret;
+}
 ```
 
 - [108. 将有序数组转化为二叉搜索树](https://github.com/PENTONCOS/leetcode/tree/main/easy/108.%20将有序数组转化为二叉搜索树.md)

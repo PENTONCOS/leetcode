@@ -274,6 +274,12 @@ var maxDepth = function(root) {
 
 动态规划，一定要知道动态转移方程，有了这个，就相当于解题的钥匙。
 
+动态转移方程：使用 dp[i] 表示以第 i 个元素结尾的最大子数组和。
+
+```js
+dp[i] = Math.max(dp[i - 1] + nums[i], nums[i])
+```
+
 - [53. 最大子数组和](https://github.com/PENTONCOS/leetcode/tree/main/easy/53.%20最大子数组和.md)
 - [70. 爬楼梯](https://github.com/PENTONCOS/leetcode/tree/main/easy/70.%20爬楼梯.md)
 - [121. 买卖股票的最佳时机](https://github.com/PENTONCOS/leetcode/tree/main/easy/121.%20买卖股票的最佳时机.md)

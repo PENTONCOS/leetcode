@@ -283,7 +283,6 @@ dp[i] = Math.max(dp[i - 1] + nums[i], nums[i])
 - [53. 最大子数组和](https://github.com/PENTONCOS/leetcode/tree/main/easy/53.%20最大子数组和.md)
 - [70. 爬楼梯](https://github.com/PENTONCOS/leetcode/tree/main/easy/70.%20爬楼梯.md)
 - [121. 买卖股票的最佳时机](https://github.com/PENTONCOS/leetcode/tree/main/easy/121.%20买卖股票的最佳时机.md)
-- [46. 全排列](https://github.com/PENTONCOS/leetcode/tree/main/medium/46.%20全排列.md)
 - [5. 最长回文子串](https://github.com/PENTONCOS/leetcode/tree/main/medium/5.%20最长回文子串.md)
 - [198. 打家劫舍](https://github.com/PENTONCOS/leetcode/tree/main/medium/198.%20打家劫舍.md)
 - [647. 回文子串](https://github.com/PENTONCOS/leetcode/tree/main/medium/647.%20回文子串.md)
@@ -457,31 +456,30 @@ var output = function(candidates, target){
 去重全排列
 
 ```js
-var permuteUnique = function (nums) {
-  let res = [];
-  let used = new Array(nums.length).fill(false);
-  nums.sort((a, b) => a - b);
-
-  function dfs(current, deep) {
-    if (deep === nums.length) {
-      res.push([...current]);
+var permute = function (nums) {
+  const result = [];
+  const used = new Array(nums.length).fill(false);
+  
+  function dfs(partialResult) {
+    if (partialResult.length === nums.length) {
+      result.push([...partialResult]);
       return;
     }
-
-    for (var i = 0; i < nums.length; i++) {
-      // used[i] == used[i - 1] 且 used[i - 1] === true，则说明同一树枝上有两个重复的元素 used[i] 和 used[i - 1]，可以选取
-      // used[i] == used[i - 1] 且 used[i - 1] === false，则说明同一层上有两个重复的元素 used[i] 和 used[i - 1]，需要跳过
-      if (used[i] || (i > 0 && nums[i] === nums[i - 1] && !used[i - 1])) {
-        continue;
+    
+    for (let i = 0; i < nums.length; i++) {
+      if (!used[i]) {
+        // 回溯核心机制
+        used[i] = true;        // 标记使用
+        partialResult.push(nums[i]);  // 加入排列
+        dfs(partialResult);    // 递归
+        partialResult.pop();   // 移除元素（回溯）
+        used[i] = false;       // 取消标记（回溯）
       }
-      used[i] = true;
-      dfs([...current, nums[i]], deep + 1);
-      used[i] = false;
     }
   }
-
-  dfs([], 0);
-  return res;
+  
+  dfs([]);
+  return result;
 };
 ```
 
@@ -489,5 +487,6 @@ var permuteUnique = function (nums) {
 - [22. 括号生成](https://github.com/PENTONCOS/leetcode/tree/main/medium/22.%20括号生成.md)
 - [39. 组合总和](https://github.com/PENTONCOS/leetcode/tree/main/medium/39.%20组合总和.md)
 - [40. 组合总和 II](https://github.com/PENTONCOS/leetcode/tree/main/medium/40.%20组合总和%20II.md)
+- [46. 全排列](https://github.com/PENTONCOS/leetcode/tree/main/medium/46.%20全排列.md) 典型的回溯问题
 - [47. 全排列 II](https://github.com/PENTONCOS/leetcode/tree/main/medium/47.%20全排列%20II.md)
 - [77. 组合](https://github.com/PENTONCOS/leetcode/tree/main/medium/77.%20组合.md)

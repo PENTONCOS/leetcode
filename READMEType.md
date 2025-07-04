@@ -296,20 +296,20 @@ dp[i] = Math.max(dp[i - 1] + nums[i], nums[i])
 
 - [66. 加一](https://github.com/PENTONCOS/leetcode/tree/main/easy/66.%20加一.md) 记住这个题，这是两数字相加的套路，这次是 +1，其实就是两数相加的题（腾讯面试遇到过两数相加）
 
-**两数相加**的模板
-```js
-var plusOne = function(digits) {
-  let carry = 1; // 进位（因为我们确定+1，初始化进位就是1）
-  for(let i = digits.length - 1; i >= 0; i--){
-    let sum = 0; // 这个变量是用来每次循环计算进位和digits[i]的值的
-    sum = digits[i] + carry; 
-    digits[i] = sum % 10; // 模运算取个位数
-    carry = (sum / 10) | 0; //  除以10是取百位数，并且｜0表示舍弃小数位
-  }
-  if(digits[0] === 0) digits.unshift(carry);
-  return digits
-};
-```
+  **两数相加**的模板
+  ```js
+  var plusOne = function(digits) {
+    let carry = 1; // 进位（因为我们确定+1，初始化进位就是1）
+    for(let i = digits.length - 1; i >= 0; i--){
+      let sum = 0; // 这个变量是用来每次循环计算进位和digits[i]的值的
+      sum = digits[i] + carry; 
+      digits[i] = sum % 10; // 模运算取个位数
+      carry = (sum / 10) | 0; //  除以10是取百位数，并且｜0表示舍弃小数位
+    }
+    if(digits[0] === 0) digits.unshift(carry);
+    return digits
+  };
+  ```
 - [69. x的平方根](https://github.com/PENTONCOS/leetcode/tree/main/easy/69.%20x的平方根.md)
 - [171. Excel 表列序号](https://github.com/PENTONCOS/leetcode/tree/main/easy/171.%20Excel%20表列序号.md)
 - [172. 阶乘后的零](https://github.com/PENTONCOS/leetcode/tree/main/easy/172.%20阶乘后的零.md)
@@ -326,6 +326,32 @@ var plusOne = function(digits) {
 这类问题的特点就是，要循环寻找，到底怎么循环寻找，看题便知。
 
 - [141. 环形链表](https://github.com/PENTONCOS/leetcode/tree/main/easy/141.%20环形链表.md)
+  
+  用**快慢指针**判断是否存在环
+  
+  ```js
+  var hasCycle = function(head) {
+    if (!head || !head.next) return false;
+    
+    let slow = head;
+    let fast = head.next;
+    
+    while (slow !== fast) {
+      if (!fast || !fast.next) return false;
+      slow = slow.next;
+      fast = fast.next.next;
+    }
+    
+    return true;
+  };
+  ```
+- [142. 环形链表 II](https://github.com/PENTONCOS/leetcode/tree/main/medium/142.%20环形链表%20II.md)
+  
+  找到环的入口，分为两个阶段：
+
+  1. **检测是否有环**：使用快慢指针，快指针每次走两步，慢指针每次走一步
+  2. **找到环的入口**：当快慢指针相遇后，将慢指针重置到头部，然后两个指针都以相同速度移动
+
 - [160. 相交链表](https://github.com/PENTONCOS/leetcode/tree/main/easy/160.%20相交链表.md)
 - [202. 快乐数](https://github.com/PENTONCOS/leetcode/tree/main/easy/202.%20快乐数.md)
 
